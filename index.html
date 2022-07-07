@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Catálogo Geek</title>
+</head>
+<body>
+   <header>
+    <div class="cabecalho">
+        <img src="/logo.svg" alt="logo">
+    <nav>
+        <ul>
+            <li><button onclick="showAddItem()">Adcionar Item</button></li>
+            <li><button onclick=" hiddenAddItem()">Productors</button></li>
+            <li><button class="contato">Contato</button></li>
+        </ul>
+    </nav>
+    </div>
+    
+   </header>
+   <main>
+    <section class="add__itens on">
+        <div class="col__1">
+            <h2>Adcionar novos itens</h2>
+            <div>
+                <input type="text" name="nome" id="inputName" maxlength="19" placeholder="Nome do Produto">        
+                <input type="text" id="inputValue" placeholder="Valor do Produto">
+                <button onclick="createActionItemUser(),hiddenAddItem()">Adcionar</button>
+                <select name="" id="typeItem">
+                    <option value="Paintings">Paintings</option>
+                    <option value="Action figures">Action figures</option>
+                </select>
+            </div>
+        </div>
+        <div class="col__2">
+            <h2>Adcionar Foto</h2>
+            <label for="inputImagem" id="labelImagem" onclick="aviso()">
+                <img src="/image-removebg-preview.png" id="uploadFoto" alt="">
+            </label>
+            <input type="file" name="" id="inputImagem">
+        </div>       
+    </section>
+    <section class="paintings">
+        <div class="retangulo"></div>
+        <h2>Paintings</h2>
+        <ul class="catalogo__1">
+        </ul>
+    </section>
+    <section class="action_figures">
+        <div class="retangulo2"></div>
+        <h2>Action Figures</h2>
+        <ul class="catalogo__2">
+        </ul>
+    </section>
+   </main>
+</body>
+</html>
