@@ -27,26 +27,21 @@
     
    </header>
    <main>
-    <section class="add__itens on">
-        <div class="col__1">
-            <h2>Adcionar novos itens</h2>
-            <div>
-                <input type="text" name="nome" id="inputName" maxlength="19" placeholder="Nome do Produto">        
-                <input type="text" id="inputValue" placeholder="Valor do Produto">
-                <button onclick="createActionItemUser(),hiddenAddItem()">Adcionar</button>
-                <select name="" id="typeItem">
-                    <option value="Paintings">Paintings</option>
-                    <option value="Action figures">Action figures</option>
-                </select>
-            </div>
-        </div>
-        <div class="col__2">
-            <h2>Adcionar Foto</h2>
+    <section class="add__itens off">
+        <div>
+            <input type="text" name="nome" id="inputName" maxlength="19" placeholder="Nome do Produto">        
+            <input type="text" id="inputValue" placeholder="Valor do Produto">
+            
+            <select name="" id="typeItem">
+                <option value="Paintings">Paintings</option>
+                <option value="Action figures">Action figures</option>
+            </select>
             <label for="inputImagem" id="labelImagem" onclick="aviso()">
                 <img src="/image-removebg-preview.png" id="uploadFoto" alt="">
             </label>
             <input type="file" name="" id="inputImagem">
-        </div>       
+            <button onclick="createActionItemUser(),hiddenAddItem()">Adcionar</button>  
+        </div>     
     </section>
     <section class="paintings">
         <div class="retangulo"></div>

@@ -34,18 +34,20 @@ ul{
     padding-right: 2vw ;
 }
 main{
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 5vh;
+    gap: 1vh;
     margin-bottom: 5vh;
     padding: 0 1vw;
 }
 li > button{
     font-size: 20px;
-    min-width: 5vw;
+    min-width: 10vw;
+    max-width: 10vw;
+    max-height: 5vh;
     min-height: 5vh;
-    width: 150px;
     color: #FFFFFF ;
     background-color: #0A99FE;
     padding: 10px 12px;
@@ -74,15 +76,16 @@ li > button:hover{
     background: #0A99FE;
 }
 .add__itens{
+    
+    position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 1.5vh;
+    left: 12vw;
 }
 .add__itens div{
     text-align: center;
     display: flex;
-    flex-direction: column;
-    gap: 1vh;
+    gap: 1vw;
 }
 .add__itens div input{
     background: rgba(10, 153, 254, 0.1);
@@ -91,18 +94,24 @@ li > button:hover{
     border-radius: 10px;
     border-width: 0.5px;
     color: #0A99FE;
-    min-width: 15vw;
+    min-width: 10vw;
+    max-width: 10vw;
+    max-height: 5vh;
     min-height: 5vh;
 }
 .add__itens div input::placeholder {
     color: #0A99FE;
   }
 .add__itens div button{
+    font-size: 20px;
     background-color: #0A99FE;
     border: none;
     color:  #FFFFFF ;
     border-radius: 10px;
-    height: 6vh;
+    min-width: 10vw;
+    max-width: 10vw;
+    max-height: 5vh;
+    min-height: 5vh;
     border-width: 0.5px;
 }
 .add__itens div button:hover{
@@ -111,27 +120,31 @@ li > button:hover{
     transition: 0.5s;
     cursor: pointer;
 }
+.add__itens select{
+    background: rgba(10, 153, 254, 0.1);
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 0.5px;
+    color: #0A99FE;
+    min-width: 10vw;
+    max-width: 10vw;
+    max-height: 5vh;
+    min-height: 5vh;
+}
 .off{
+    transition: 0.5s;
 display: none;
-}
-.col__1{
-    margin-top: -1vh;
-    padding-top: 0;
-}
-.col__2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20vw;
-    height: 26.5vh;    
 }
 #inputImagem{
     display: none;
     /* visibility: hidden; */
 }
 #uploadFoto{
-    min-width: 5vw;
-    width: 100px;
+    min-width: 3vw;
+    max-width: 3vw;
+    max-height: 5vh;
+    min-height: 5vh;
     border-radius: 100px;
     box-shadow: 1px 1px 10px black;
     cursor: pointer; 
@@ -141,8 +154,10 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 15vw;
-    height: 25vh;
+    min-width: 3vw;
+    max-width: 3vw;
+    max-height: 5vh;
+    min-height: 5vh;
     
 }
 .catalogo__1{
